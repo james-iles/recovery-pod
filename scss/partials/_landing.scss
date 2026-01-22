@@ -58,12 +58,8 @@
     background: linear-gradient(135deg, $teal-primary, $teal-light);
     border-radius: $border-radius-lg;
     box-shadow: $shadow-lg;
-
-    svg {
-      width: 40px;
-      height: 40px;
-      color: $white;
-    }
+    font-size: 2.5rem;
+    color: $white;
   }
 
   &__title {
@@ -170,16 +166,12 @@
     color: $dark;
     transition: all $transition-fast;
     backdrop-filter: blur(5px);
+    font-size: 1.25rem;
 
     &:hover {
       background: $teal-primary;
       color: $white;
       transform: translateY(-2px);
-    }
-
-    svg {
-      width: 20px;
-      height: 20px;
     }
   }
 }
