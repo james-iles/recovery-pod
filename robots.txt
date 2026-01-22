@@ -1,0 +1,6 @@
+# Recovery Pod - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://recoverypod.jamesiles.uk/sitemap.xml
