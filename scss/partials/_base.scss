@@ -2,6 +2,7 @@
 // BASE - Foundation Styles
 // ===========================================
 
+@use 'sass:color';
 @use 'variables' as *;
 
 body {
@@ -39,7 +40,7 @@ a {
   transition: color $transition-fast;
 
   &:hover {
-    color: darken($color-primary, 10%);
+    color: color.adjust($color-primary, $lightness: -10%);
   }
 }
 

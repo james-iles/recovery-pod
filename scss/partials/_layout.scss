@@ -178,27 +178,3 @@
   }
 }
 
-// Responsive adjustments
-@media (max-width: $breakpoint-md) {
-  .hero {
-    padding-top: 100px;
-    text-align: center;
-
-    &__content {
-      margin: 0 auto;
-    }
-
-    &__text {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &__actions {
-      justify-content: center;
-    }
-  }
-
-  .nav {
-    display: none; // Mobile nav would be added later
-  }
-}

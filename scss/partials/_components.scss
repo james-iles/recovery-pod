@@ -2,6 +2,7 @@
 // COMPONENTS - Reusable UI Elements
 // ===========================================
 
+@use 'sass:color';
 @use 'variables' as *;
 
 // Buttons
@@ -23,7 +24,7 @@
     color: $white;
 
     &:hover {
-      background-color: darken($color-primary, 8%);
+      background-color: color.adjust($color-primary, $lightness: -8%);
       transform: translateY(-2px);
       box-shadow: $shadow;
     }
@@ -34,7 +35,7 @@
     color: $white;
 
     &:hover {
-      background-color: darken($orange-warm, 8%);
+      background-color: color.adjust($orange-warm, $lightness: -8%);
       transform: translateY(-2px);
       box-shadow: $shadow;
     }
