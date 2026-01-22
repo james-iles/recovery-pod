@@ -1,0 +1,77 @@
+// ===========================================
+// BASE - Foundation Styles
+// ===========================================
+
+@use 'variables' as *;
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  color: $dark;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, $font-size-3xl);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, $font-size-2xl);
+}
+
+h3 {
+  font-size: $font-size-xl;
+}
+
+// Links
+a {
+  color: $color-primary;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: darken($color-primary, 10%);
+  }
+}
+
+// Selection
+::selection {
+  background-color: $teal-light;
+  color: $dark;
+}
+
+// Focus styles for accessibility
+:focus-visible {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+}
+
+// Container
+.container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+// Screen reader only
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

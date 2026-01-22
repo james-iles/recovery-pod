@@ -1,0 +1,204 @@
+// ===========================================
+// LAYOUT - Page Structure & Sections
+// ===========================================
+
+@use 'variables' as *;
+
+// Header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: $spacing-sm 0;
+  background-color: rgba($white, 0.95);
+  backdrop-filter: blur(10px);
+  transition: box-shadow $transition-base;
+
+  &--scrolled {
+    box-shadow: $shadow;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  font-family: $font-heading;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-primary;
+}
+
+// Navigation
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $spacing-lg;
+  }
+
+  &__link {
+    font-weight: $font-weight-medium;
+    color: $dark;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: $spacing-2xl 0;
+  background: linear-gradient(135deg, $off-white 0%, $ice-blue 100%);
+
+  &__content {
+    max-width: 700px;
+  }
+
+  &__tagline {
+    display: inline-block;
+    margin-bottom: $spacing-md;
+    padding: $spacing-xs $spacing-sm;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $orange-warm;
+    background-color: rgba($orange-warm, 0.1);
+    border-radius: $border-radius-full;
+  }
+
+  &__title {
+    margin-bottom: $spacing-md;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-lg;
+    color: $color-text-light;
+    margin-bottom: $spacing-lg;
+    max-width: 550px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+}
+
+// Section
+.section {
+  padding: $spacing-2xl 0;
+
+  &--teal {
+    background-color: $teal-light;
+  }
+
+  &--ice {
+    background-color: $ice-blue;
+  }
+
+  &__header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto $spacing-xl;
+  }
+
+  &__title {
+    margin-bottom: $spacing-sm;
+  }
+
+  &__subtitle {
+    color: $color-text-light;
+    font-size: $font-size-lg;
+  }
+}
+
+// Services Grid - for booking integration
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-lg;
+}
+
+// Footer
+.footer {
+  padding: $spacing-xl 0;
+  background-color: $dark;
+  color: $white;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-md;
+    text-align: center;
+  }
+
+  &__logo {
+    color: $color-primary;
+  }
+
+  &__text {
+    color: $gray-light;
+    font-size: $font-size-sm;
+  }
+
+  &__social {
+    display: flex;
+    gap: $spacing-sm;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: $border-radius-full;
+    background-color: rgba($white, 0.1);
+    color: $white;
+    transition: background-color $transition-fast;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: $breakpoint-md) {
+  .hero {
+    padding-top: 100px;
+    text-align: center;
+
+    &__content {
+      margin: 0 auto;
+    }
+
+    &__text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__actions {
+      justify-content: center;
+    }
+  }
+
+  .nav {
+    display: none; // Mobile nav would be added later
+  }
+}

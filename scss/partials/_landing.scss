@@ -1,0 +1,189 @@
+// ===========================================
+// LANDING PAGE - Holding Page Styles
+// ===========================================
+
+@use 'variables' as *;
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-lg;
+  text-align: center;
+  background: linear-gradient(160deg, $off-white 0%, $ice-blue 50%, $teal-light 100%);
+  position: relative;
+  overflow: hidden;
+
+  // Subtle decorative elements
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &::before {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, $teal-primary 0%, transparent 70%);
+    top: -100px;
+    right: -100px;
+  }
+
+  &::after {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, $orange-warm 0%, transparent 70%);
+    bottom: -50px;
+    left: -50px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto $spacing-lg;
+    background: linear-gradient(135deg, $teal-primary, $teal-light);
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-lg;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      color: $white;
+    }
+  }
+
+  &__title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: $spacing-sm;
+    background: linear-gradient(135deg, $dark 0%, $teal-primary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__tagline {
+    font-family: $font-heading;
+    font-size: $font-size-xl;
+    color: $orange-warm;
+    margin-bottom: $spacing-md;
+  }
+
+  &__text {
+    font-size: $font-size-lg;
+    color: $color-text-light;
+    margin-bottom: $spacing-xl;
+    line-height: 1.7;
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-md;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    padding: $spacing-sm $spacing-md;
+    background: rgba($white, 0.8);
+    border-radius: $border-radius-full;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $dark;
+    backdrop-filter: blur(5px);
+
+    &-icon {
+      font-size: 1.25rem;
+    }
+  }
+
+  // Email signup form
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    max-width: 400px;
+    margin: 0 auto $spacing-lg;
+
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-base;
+    border: 2px solid rgba($teal-primary, 0.3);
+    border-radius: $border-radius;
+    background: rgba($white, 0.9);
+    transition: border-color $transition-fast, box-shadow $transition-fast;
+
+    &:focus {
+      border-color: $teal-primary;
+      box-shadow: 0 0 0 3px rgba($teal-primary, 0.15);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+
+  &__submit {
+    white-space: nowrap;
+  }
+
+  &__note {
+    font-size: $font-size-sm;
+    color: $gray;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-sm;
+    margin-top: $spacing-xl;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: $border-radius-full;
+    background: rgba($white, 0.8);
+    color: $dark;
+    transition: all $transition-fast;
+    backdrop-filter: blur(5px);
+
+    &:hover {
+      background: $teal-primary;
+      color: $white;
+      transform: translateY(-2px);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
