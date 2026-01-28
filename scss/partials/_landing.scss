@@ -97,16 +97,19 @@
     display: flex;
     align-items: center;
     gap: $spacing-xs;
-    padding: $spacing-sm $spacing-md;
-    background: rgba($white, 0.8);
+    padding: 0.75rem 1.25rem;
+    background: rgba($white, 0.6);
     border-radius: $border-radius-full;
-    font-size: $font-size-sm;
+    font-size: 0.825rem;
     font-weight: $font-weight-medium;
-    color: $dark;
+    color: $gray-dark;
     backdrop-filter: blur(5px);
+    border: 1px solid rgba($teal-primary, 0.15);
 
     &-icon {
-      font-size: 1.25rem;
+      font-size: 0.9rem;
+      color: $gray-dark;
+      opacity: 0.85;
     }
   }
 
@@ -172,6 +175,32 @@
       background: $teal-primary;
       color: $white;
       transform: translateY(-2px);
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: $spacing-md;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: $dark;
+    opacity: 0.65;
+
+    p {
+      margin: 0.25rem 0;
+    }
+
+    a {
+      color: $orange-warm;
+      text-decoration: none;
+      // border-bottom: 1px solid currentColor;
+      transition: opacity $transition-fast;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
