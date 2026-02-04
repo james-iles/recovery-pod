@@ -70,15 +70,15 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #2A3635;
-  background-color: #FFFFFF;
+  color: #2a3635;
+  background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
   line-height: 1.2;
-  color: #2A3635;
+  color: #2a3635;
 }
 
 h1 {
@@ -94,7 +94,7 @@ h3 {
 }
 
 a {
-  color: #66B9A3;
+  color: #66b9a3;
   transition: color 150ms ease;
 }
 a:hover {
@@ -102,12 +102,12 @@ a:hover {
 }
 
 ::selection {
-  background-color: #B3D3CF;
-  color: #2A3635;
+  background-color: #b3d3cf;
+  color: #2a3635;
 }
 
 :focus-visible {
-  outline: 2px solid #66B9A3;
+  outline: 2px solid #66b9a3;
   outline-offset: 2px;
 }
 
@@ -144,8 +144,8 @@ a:hover {
   transition: all 250ms ease;
 }
 .btn--primary {
-  background-color: #66B9A3;
-  color: #FFFFFF;
+  background-color: #66b9a3;
+  color: #ffffff;
 }
 .btn--primary:hover {
   background-color: rgb(77.2825112108, 168.9174887892, 144.6286995516);
@@ -153,8 +153,8 @@ a:hover {
   box-shadow: 0 4px 6px rgba(42, 54, 53, 0.07);
 }
 .btn--secondary {
-  background-color: #E07850;
-  color: #FFFFFF;
+  background-color: #e07850;
+  color: #ffffff;
 }
 .btn--secondary:hover {
   background-color: rgb(217.8601941748, 93.2621359223, 45.3398058252);
@@ -163,12 +163,12 @@ a:hover {
 }
 .btn--outline {
   background-color: transparent;
-  color: #66B9A3;
-  border: 2px solid #66B9A3;
+  color: #66b9a3;
+  border: 2px solid #66b9a3;
 }
 .btn--outline:hover {
-  background-color: #66B9A3;
-  color: #FFFFFF;
+  background-color: #66b9a3;
+  color: #ffffff;
 }
 .btn--large {
   padding: 1.5rem 3rem;
@@ -176,7 +176,7 @@ a:hover {
 }
 
 .card {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(42, 54, 53, 0.07);
   overflow: hidden;
@@ -199,7 +199,7 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 .card__text {
-  color: #7A8685;
+  color: #7a8685;
   font-size: 0.875rem;
 }
 
@@ -217,7 +217,7 @@ a:hover {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  color: #66B9A3;
+  color: #66b9a3;
 }
 
 .badge {
@@ -226,8 +226,8 @@ a:hover {
   font-size: 0.875rem;
   font-weight: 500;
   border-radius: 9999px;
-  background-color: #B3D3CF;
-  color: #2A3635;
+  background-color: #b3d3cf;
+  color: #2a3635;
 }
 
 .form-group {
@@ -238,7 +238,7 @@ a:hover {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #2A3635;
+  color: #2a3635;
 }
 
 .form-input,
@@ -247,22 +247,22 @@ a:hover {
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
-  border: 2px solid #C5CDCC;
+  border: 2px solid #c5cdcc;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition: border-color 150ms ease, box-shadow 150ms ease;
 }
 .form-input:focus,
 .form-select:focus,
 .form-textarea:focus {
-  border-color: #66B9A3;
+  border-color: #66b9a3;
   box-shadow: 0 0 0 3px rgba(102, 185, 163, 0.15);
   outline: none;
 }
 .form-input::placeholder,
 .form-select::placeholder,
 .form-textarea::placeholder {
-  color: #7A8685;
+  color: #7a8685;
 }
 
 .form-textarea {
@@ -294,7 +294,7 @@ a:hover {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #66B9A3;
+  color: #66b9a3;
 }
 
 .nav__list {
@@ -304,11 +304,11 @@ a:hover {
 }
 .nav__link {
   font-weight: 500;
-  color: #2A3635;
+  color: #2a3635;
   transition: color 150ms ease;
 }
 .nav__link:hover {
-  color: #66B9A3;
+  color: #66b9a3;
 }
 
 .hero {
@@ -316,7 +316,7 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 5rem 0;
-  background: linear-gradient(135deg, #FAFCFC 0%, #D6EEF5 100%);
+  background: linear-gradient(135deg, #fafcfc 0%, #d6eef5 100%);
 }
 .hero__content {
   max-width: 700px;
@@ -327,7 +327,7 @@ a:hover {
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #E07850;
+  color: #e07850;
   background-color: rgba(224, 120, 80, 0.1);
   border-radius: 9999px;
 }
@@ -335,11 +335,11 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 .hero__title span {
-  color: #66B9A3;
+  color: #66b9a3;
 }
 .hero__text {
   font-size: 1.125rem;
-  color: #7A8685;
+  color: #7a8685;
   margin-bottom: 2rem;
   max-width: 550px;
 }
@@ -353,10 +353,10 @@ a:hover {
   padding: 5rem 0;
 }
 .section--teal {
-  background-color: #B3D3CF;
+  background-color: #b3d3cf;
 }
 .section--ice {
-  background-color: #D6EEF5;
+  background-color: #d6eef5;
 }
 .section__header {
   text-align: center;
@@ -367,7 +367,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 .section__subtitle {
-  color: #7A8685;
+  color: #7a8685;
   font-size: 1.125rem;
 }
 
@@ -379,8 +379,8 @@ a:hover {
 
 .footer {
   padding: 3rem 0;
-  background-color: #2A3635;
-  color: #FFFFFF;
+  background-color: #2a3635;
+  color: #ffffff;
 }
 .footer__inner {
   display: flex;
@@ -390,10 +390,10 @@ a:hover {
   text-align: center;
 }
 .footer__logo {
-  color: #66B9A3;
+  color: #66b9a3;
 }
 .footer__text {
-  color: #C5CDCC;
+  color: #c5cdcc;
   font-size: 0.875rem;
 }
 .footer__social {
@@ -408,11 +408,11 @@ a:hover {
   height: 40px;
   border-radius: 9999px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
+  color: #ffffff;
   transition: background-color 150ms ease;
 }
 .footer__social-link:hover {
-  background-color: #66B9A3;
+  background-color: #66b9a3;
 }
 
 .landing {
@@ -423,7 +423,7 @@ a:hover {
   justify-content: center;
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(160deg, #FAFCFC 0%, #D6EEF5 50%, #B3D3CF 100%);
+  background: linear-gradient(160deg, #fafcfc 0%, #d6eef5 50%, #b3d3cf 100%);
   position: relative;
   overflow: hidden;
 }
@@ -437,14 +437,14 @@ a:hover {
 .landing::before {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, #66B9A3 0%, transparent 70%);
+  background: radial-gradient(circle, #66b9a3 0%, transparent 70%);
   top: -100px;
   right: -100px;
 }
 .landing::after {
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, #E07850 0%, transparent 70%);
+  background: radial-gradient(circle, #e07850 0%, transparent 70%);
   bottom: -50px;
   left: -50px;
 }
@@ -452,6 +452,7 @@ a:hover {
   position: relative;
   z-index: 1;
   max-width: 600px;
+  padding-bottom: 4rem;
 }
 .landing__icon {
   display: flex;
@@ -460,16 +461,16 @@ a:hover {
   width: 80px;
   height: 80px;
   margin: 0 auto 2rem;
-  background: linear-gradient(135deg, #66B9A3, #B3D3CF);
+  background: linear-gradient(135deg, #66b9a3, #b3d3cf);
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(42, 54, 53, 0.1);
   font-size: 2.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .landing__title {
   font-size: clamp(2.5rem, 6vw, 4rem);
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #2A3635 0%, #66B9A3 100%);
+  background: linear-gradient(135deg, #2a3635 0%, #66b9a3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -477,12 +478,12 @@ a:hover {
 .landing__tagline {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.5rem;
-  color: #E07850;
+  color: #e07850;
   margin-bottom: 1.5rem;
 }
 .landing__text {
   font-size: 1.125rem;
-  color: #7A8685;
+  color: #7a8685;
   margin-bottom: 3rem;
   line-height: 1.7;
 }
@@ -502,25 +503,25 @@ a:hover {
   border-radius: 9999px;
   font-size: 0.825rem;
   font-weight: 500;
-  color: #4A5554;
+  color: #4a5554;
   backdrop-filter: blur(5px);
   border: 1px solid rgba(102, 185, 163, 0.15);
 }
 .landing__feature-icon {
   font-size: 0.9rem;
-  color: #4A5554;
+  color: #4a5554;
   opacity: 0.85;
 }
 .landing__form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 400px;
+  gap: 0.75rem;
+  max-width: 320px;
   margin: 0 auto 2rem;
 }
 .landing__input {
-  flex: 1;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.25rem;
+  min-width: 200px;
   font-size: 1rem;
   border: 2px solid rgba(102, 185, 163, 0.3);
   border-radius: 8px;
@@ -528,19 +529,20 @@ a:hover {
   transition: border-color 150ms ease, box-shadow 150ms ease;
 }
 .landing__input:focus {
-  border-color: #66B9A3;
+  border-color: #66b9a3;
   box-shadow: 0 0 0 3px rgba(102, 185, 163, 0.15);
   outline: none;
 }
 .landing__input::placeholder {
-  color: #7A8685;
+  color: #7a8685;
 }
 .landing__submit {
   white-space: nowrap;
+  padding: 0.75rem 1.5rem;
 }
 .landing__note {
   font-size: 0.875rem;
-  color: #7A8685;
+  color: #7a8685;
 }
 .landing__social {
   display: flex;
@@ -556,14 +558,14 @@ a:hover {
   height: 44px;
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.8);
-  color: #2A3635;
+  color: #2a3635;
   transition: all 150ms ease;
   backdrop-filter: blur(5px);
   font-size: 1.25rem;
 }
 .landing__social-link:hover {
-  background: #66B9A3;
-  color: #FFFFFF;
+  background: #66b9a3;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 .landing__footer {
@@ -573,14 +575,14 @@ a:hover {
   right: 0;
   text-align: center;
   font-size: 0.75rem;
-  color: #2A3635;
+  color: #2a3635;
   opacity: 0.65;
 }
 .landing__footer p {
   margin: 0.25rem 0;
 }
 .landing__footer a {
-  color: #E07850;
+  color: #e07850;
   text-decoration: none;
   transition: opacity 150ms ease;
 }
@@ -591,6 +593,8 @@ a:hover {
 @media (min-width: 576px) {
   .landing__form {
     flex-direction: row;
+    justify-content: center;
+    max-width: none;
   }
 }
 @media (max-width: 768px) {

@@ -3,18 +3,18 @@
 // ===========================================
 
 // Color Palette
-$teal-primary: #66B9A3;
-$teal-light: #B3D3CF;
-$orange-warm: #E07850;
-$ice-blue: #D6EEF5;
-$white: #FFFFFF;
-$off-white: #FAFCFC;
+$teal-primary: #66b9a3;
+$teal-light: #b3d3cf;
+$orange-warm: #e07850;
+$ice-blue: #d6eef5;
+$white: #ffffff;
+$off-white: #fafcfc;
 
 // Neutrals
-$dark: #2A3635;
-$gray-dark: #4A5554;
-$gray: #7A8685;
-$gray-light: #C5CDCC;
+$dark: #2a3635;
+$gray-dark: #4a5554;
+$gray: #7a8685;
+$gray-light: #c5cdcc;
 
 // Semantic Colors
 $color-primary: $teal-primary;
@@ -25,8 +25,14 @@ $color-text: $dark;
 $color-text-light: $gray;
 
 // Typography
-$font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-$font-heading: 'Playfair Display', Georgia, serif;
+$font-primary:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  sans-serif;
+$font-heading: "Playfair Display", Georgia, serif;
 
 $font-size-base: 1rem;
 $font-size-sm: 0.875rem;

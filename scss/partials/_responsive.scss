@@ -8,6 +8,8 @@
 @media (min-width: $breakpoint-sm) {
   .landing__form {
     flex-direction: row;
+    justify-content: center;
+    max-width: none;
   }
 }
 
