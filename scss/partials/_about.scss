@@ -1,0 +1,188 @@
+@use "sass:color";
+@use "variables" as *;
+
+.page {
+  background: linear-gradient(160deg, $off-white 0%, $ice-blue 50%, $teal-light 100%);
+}
+
+.hero--compact {
+  min-height: auto;
+  padding: calc($spacing-2xl + 4rem) 0 $spacing-2xl;
+}
+
+.hero__content--centered {
+  margin: 0 auto;
+  text-align: center;
+
+  .hero__text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $spacing-lg;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-md;
+}
+
+.gallery__item {
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+}
+
+.placeholder-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, $ice-blue 0%, $teal-light 100%);
+  color: $gray;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+
+  i {
+    font-size: 2rem;
+    color: $teal-primary;
+    opacity: 0.6;
+  }
+
+  &--landscape {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.prep-tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: $spacing-lg;
+
+  &__card {
+    text-align: center;
+    padding: $spacing-xl $spacing-md;
+    background: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow;
+    transition:
+      transform $transition-base,
+      box-shadow $transition-base;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: $shadow-lg;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto $spacing-md;
+    background: linear-gradient(135deg, $ice-blue, $teal-light);
+    border-radius: $border-radius-full;
+    font-size: 1.5rem;
+    color: $teal-primary;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-xs;
+    color: $dark;
+  }
+
+  &__text {
+    font-size: $font-size-sm;
+    color: $color-text-light;
+    line-height: $line-height-base;
+  }
+}
+
+.faq {
+  max-width: 720px;
+  margin: 0 auto;
+
+  &__item {
+    border-bottom: 1px solid $gray-light;
+
+    &:first-child {
+      border-top: 1px solid $gray-light;
+    }
+
+    &[open] {
+      .faq__question {
+        color: $teal-primary;
+
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $spacing-md 0;
+    font-family: $font-primary;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $dark;
+    cursor: pointer;
+    list-style: none;
+    transition: color $transition-fast;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::marker {
+      display: none;
+      content: "";
+    }
+
+    // Custom chevron from FA
+    &::after {
+      content: "\f078";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: $font-size-sm;
+      color: $gray;
+      transition: transform $transition-base;
+      flex-shrink: 0;
+      margin-left: $spacing-sm;
+    }
+
+    &:hover {
+      color: $teal-primary;
+    }
+  }
+
+  &__answer {
+    padding: 0 0 $spacing-md;
+
+    p {
+      font-size: $font-size-base;
+      color: $color-text-light;
+      line-height: 1.7;
+    }
+  }
+}
+
+.nav__link--active {
+  color: $color-primary;
+}

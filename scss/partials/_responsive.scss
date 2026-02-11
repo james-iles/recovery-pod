@@ -36,4 +36,27 @@
   .nav {
     display: none; // Mobile nav would be added later
   }
+
+  // About page responsive
+  .faq__question {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  .prep-tips {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+
+    &__card {
+      padding: 1.5rem 1rem;
+    }
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }

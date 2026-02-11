@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+.section--booking {
+  padding: $spacing-lg 0;
+}
+
+.booking-embed {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+  min-height: 500px;
+}

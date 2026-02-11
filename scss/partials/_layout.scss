@@ -107,13 +107,17 @@
   }
 
   &--ice {
-    background-color: $ice-blue;
+    background-color: rgba($ice-blue, 0.4);
   }
 
   &__header {
     text-align: center;
     max-width: 600px;
     margin: 0 auto $spacing-xl;
+
+    .btn {
+      margin-top: $spacing-md;
+    }
   }
 
   &__title {

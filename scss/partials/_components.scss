@@ -25,6 +25,7 @@
 
     &:hover {
       background-color: color.adjust($color-primary, $lightness: -8%);
+      color: $white;
       transform: translateY(-2px);
       box-shadow: $shadow;
     }
@@ -36,6 +37,7 @@
 
     &:hover {
       background-color: color.adjust($orange-warm, $lightness: -8%);
+      color: $white;
       transform: translateY(-2px);
       box-shadow: $shadow;
     }
